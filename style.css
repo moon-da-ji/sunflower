@@ -1,0 +1,758 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1 {
+    text-align: center;
+    font-size: 36px; /* adjust font size as needed */
+    position: middle;
+}
+.container {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* 100% of the viewport height */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.animated-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(butterfly.jpg)no-repeat;
+  }
+
+  .navbar {
+      width: 1200px;
+      height: 75px;
+      margin: auto;
+  }
+  
+.icon {
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+
+.logo {
+  color: rgb(93, 0, 255);
+  font-size: 35px;
+  font-family: Arial;
+  padding-left: 20px;
+  float: left;
+  padding-top: 10px;
+}
+
+.menu {
+  width: 400px;
+  float: right;
+  height: 70px;
+}
+
+ul {
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul li {
+  list-style: none;
+  margin-left: 62px;
+  margin-top: 27px;
+  font-size: 14px;
+}
+
+ul li a{
+  text-decoration: none;
+  color: #007bff;
+  font-family: Arial;
+  font-weight: bold;
+  transition: 0.4s ease-in-out;
+}
+
+ul li a:hover{
+  color: darkgoldenrod;
+}
+
+.content{
+  width: 1000px;
+  height: auto;
+  margin: auto;
+  position: relative;
+}
+
+.content .par{
+  color: antiquewhite;
+  padding-left: 40px;
+  padding-bottom: 25px;
+  font-family: Arial;
+  letter-spacing: 1.2px;
+  line-height: 30px;
+}
+
+.content h1{
+  color: antiquewhite;
+  font-family: 'Times New Roman';
+  font-size: 50px;
+  padding-left: 20px;
+  margin-top: 9%;
+  letter-spacing: 2px;
+}
+
+.content .cn{
+  width: 250px;
+  height: 50px;
+  background: #ff7200;
+  border: none;
+  margin-bottom: 10px;
+  margin-left: 13px;
+  font-size: 24px;
+  border-radius: 10px;
+  cursor:pointer;
+  transition: .4s ease;
+}
+
+.content .cn a{
+  text-decoration: none;
+  color: black;
+  transition: .3s ease;
+}
+
+.cn:hover{
+  background-color: white;
+}
+
+.content span{
+  color: #ff7200;
+  font-size: 60px;
+}
+
+    /* Add some basic styling for the dropdown menu */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+  }
+  .dropdown-content {
+      display: none;
+      position: absolute;
+      right: -200px;
+      background-color: black;
+      min-width: 160px;
+      box-shadow: antiquewhite;
+      z-index: 1;
+      transition: right 0.5s ease;
+  }
+  .dropdown-content a {
+      color:antiquewhite;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+  }
+  .dropdown-content a:hover {
+      background-color: black;
+  }
+  .dropdown:hover .dropdown-content {
+      display: block;
+      right: 0;
+  }
+
+  /* Styling for the paragraph content */
+  .content-paragraph {
+      display: none;
+      padding: 20px;
+      background-color: antiquewhite;
+      box-shadow: black;
+      margin-top: 10px;
+  }
+
+body {
+  background-image: url(butterfly.jpg);
+}
+.mahusay{
+  max-width:600px;
+  margin: 50px auto;
+  background-color: antiquewhite;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px red;
+}
+
+h1 {
+  color: black;
+  text-align: center;
+}
+p {
+  color: black;
+  line-height: 1.6;
+  text-align: center;
+}
+.highlight {
+  color:coral;
+  font-weight: bold;
+}
+
+.my{
+  width: 100px;
+  height: 50px;
+  background: #ff7200;
+  border: none;
+  display: below;
+  margin-bottom: 10px;
+  margin-left: 13px;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor:pointer;
+  transition: .4s ease;
+}
+
+.my a{
+  text-decoration: none;
+  color: #ff7200;
+  transition: .3s ease;
+}
+
+.my:hover{
+  background-color: #ff7200;
+}
+
+.my span{
+  color: #ff7200;
+  font-size: 16px;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  background-image: url(butterfly.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.login-container {
+  background: linear-gradient(135deg, rgb(100, 99, 98), rgb(249, 208, 155));
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  max-width: 350px;
+  width: 300px;
+  text-align: center;
+  border: 5px solid rgb(249, 100, 14);
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.input-group {
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.input-group input {
+  width: calc(100% - 20px);
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: rgb(222, 98, 26);
+  color: black;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: antiquewhite;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('butterfly.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.ako {
+  text-align: center;
+  margin: 20px;
+  background-color: rgba(151, 145, 139, 0.8); /* Optional: Add a semi-transparent background */
+  padding: 20px; /* Optional: Add some padding */
+  border-radius: 10px; /* Optional: Add rounded corners */
+}
+
+.buttons {
+  margin-top: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.buttons button {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: antiquewhite;
+}
+
+h1 {
+  color: black;
+  text-align: center;
+}
+p {
+  color: black;
+  line-height: 1.6;
+}
+
+h2{
+  color:black;
+  text-align: center;
+}
+
+.balibolista {
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: rgba(125, 120, 113, 0.8); /* Optional: Add a semi-transparent background */
+  padding: 20px; /* Optional: Add some padding */
+  border-radius: 5px; /* Optional: Add rounded corners */
+  display: inline-block;
+  text-align: center;
+}
+
+.button-balibolista {
+  text-align: center;
+  margin-top: 50px;
+  font-weight: bold;
+}
+
+.button-balibolista button {
+  margin: 10px;
+  padding: 10px 50px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+  background-color: rgb(247, 212, 166);
+}
+
+img {
+  max-width: 600px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border: 5px solid #555;
+  border-radius: 5px;
+}
+
+img:hover{
+  box-shadow: 0 0 2px 1px rgba(0,140,186,0.5);
+}
+
+.mahusay{
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: rgba(125, 120, 113, 0.8); /* Optional: Add a semi-transparent background */
+  padding: 20px; /* Optional: Add some padding */
+  border-radius: 5px; /* Optional: Add rounded corners */
+  display: inline-block;
+  text-align: center;
+}
+
+.button-mahusay {
+  text-align: center;
+  margin-top: 50px;
+  font-weight: bold;
+}
+
+.button-mahusay button {
+  margin: 10px;
+  padding: 10px 50px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+  background-color: rgb(247, 212, 166);
+}
+
+.container{
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: rgba(125, 120, 113, 0.8); /* Optional: Add a semi-transparent background */
+  padding: 20px; /* Optional: Add some padding */
+  border-radius: 5px; /* Optional: Add rounded corners */
+  display: inline-block;
+  text-align: center;
+}
+
+.button-container {
+  text-align: center;
+  margin-top: 50px;
+  font-weight: bold;
+}
+
+.button-container button {
+  margin: 10px;
+  padding: 10px 50px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+  background-color: rgb(247, 212, 166);
+}
+
+.kaibigan{
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: rgba(138, 80, 73, 0.8); /* Optional: Add a semi-transparent background */
+  padding: 20px; /* Optional: Add some padding */
+  border-radius: 5px; /* Optional: Add rounded corners */
+  display: inline-block;
+  text-align: center;
+}
+
+.button-kaibigan {
+  text-align: center;
+  margin-top: 50px;
+  font-weight: bold;
+}
+
+.button-kaibigan button {
+  margin: 10px;
+  padding: 10px 50px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+  background-color: rgb(247, 212, 166);
+}
+
+.AYUKO{
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: rgba(122, 84, 79, 0.8); /* Optional: Add a semi-transparent background */
+  padding: 20px; /* Optional: Add some padding */
+  border-radius: 5px; /* Optional: Add rounded corners */
+  display: inline-block;
+  text-align: center;
+}
+
+.button-AYUKO {
+  text-align: center;
+  margin-top: 50px;
+  font-weight: bold;
+}
+
+.button-AYUKO button {
+  margin: 10px;
+  padding: 10px 50px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+  background-color: rgb(247, 212, 166);
+}
+
+.kurtina{
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: rgba(121, 81, 119, 0.8); /* Optional: Add a semi-transparent background */
+  padding: 20px; /* Optional: Add some padding */
+  border-radius: 5px; /* Optional: Add rounded corners */
+  display: inline-block;
+  text-align: center;
+}
+
+.button-kurtina {
+  text-align: center;
+  margin-top: 50px;
+  font-weight: bold;
+}
+
+.button-kurtina button {
+  margin: 10px;
+  padding: 10px 50px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+  background-color: rgb(247, 212, 166);
+}
+
+.pighati{
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: rgba(102, 87, 57, 0.8); /* Optional: Add a semi-transparent background */
+  padding: 20px; /* Optional: Add some padding */
+  border-radius: 5px; /* Optional: Add rounded corners */
+  display: inline-block;
+  text-align: center;
+}
+
+.button-pighati {
+  text-align: center;
+  margin-top: 50px;
+  font-weight: bold;
+}
+
+.button-pighati button {
+  margin: 10px;
+  padding: 10px 50px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+  background-color: rgb(247, 212, 166);
+}
+
+.piyos{
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: rgba(102, 87, 57, 0.8); /* Optional: Add a semi-transparent background */
+  padding: 20px; /* Optional: Add some padding */
+  border-radius: 5px; /* Optional: Add rounded corners */
+  display: inline-block;
+  text-align: center;
+}
+
+.button-piyos {
+  text-align: center;
+  margin-top: 50px;
+  font-weight: bold;
+}
+
+.button-piyos button {
+  margin: 10px;
+  padding: 10px 50px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+  background-color: rgb(247, 212, 166);
+}
+
+.House{
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: rgba(92, 113, 156, 0.8); /* Optional: Add a semi-transparent background */
+  padding: 20px; /* Optional: Add some padding */
+  border-radius: 5px; /* Optional: Add rounded corners */
+  display: inline-block;
+  text-align: center;
+}
+
+.button-House {
+  text-align: center;
+  margin-top: 50px;
+  font-weight: bold;
+}
+
+.button-House button {
+  margin: 10px;
+  padding: 10px 50px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+  background-color: rgb(247, 212, 166);
+}
+
+
+.highlight {
+  font-weight: bold;
+  color: #ff6347; /* Example highlight color */
+}
+
+body{
+
+  background-image: url(butterfly.jpg);
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.form-container {
+  background: linear-gradient(135deg, rgb(100, 99, 98), antiquewhite);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  max-width: 350px;
+  width: 300px;
+  text-align: center;
+  border: 5px solid rgb(249, 100, 14);
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  height: 800px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #3694f9;
+  font-size: 20px;
+  text-shadow: 1px 1px 2px #faaa69;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+.form .gender-box {
+  margin-top: 20px;
+}
+
+.gender-box h3 {
+  color: antiquewhite;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+.form :where(.gender-option, .gender) {
+  display: flex;
+  align-items: center;
+  column-gap: 50px;
+  flex-wrap: wrap;
+}
+
+.form .gender {
+  column-gap: 5px;
+  cursor: pointer;
+}
+
+.gender input {
+  accent-color: #d87904;
+}
+.form :where(.gender input, .gender label) {
+  cursor: pointer;
+}
+
+.gender label {
+  color: antiquewhite;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: antiquewhite;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="number"] {
+width: 100%;
+padding: 8px;
+box-sizing: border-box;
+border: 2px solid #ff9c66;
+border-radius: 8px;
+background-color: antiquewhite;
+color: #ff6633;
+font-size: 14px;
+font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="date"]:focus,
+input[type="number"]:focus {
+border-color: #ec5e17;
+outline: none;
+box-shadow: 0 0 5px rgba(134, 69, 7, 0.5);
+}
+
+button {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      background-color: #fb4e2c;
+      color: antiquewhite;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      transition: background-color 0.3s ease;
+  }
+
+button:hover {
+      background-color: #f9924e;
+  }
+
+button:active {
+      background-color: #fb6412;
+  }
+
+.switch-form {
+      text-align: center;
+      margin-top: 10px;
+      color: antiquewhite;
+  }
+
+.switch-form a {
+      color: #f78c3a;
+      text-decoration: none;
+      font-weight: bold;
+  }
+
+.switch-form a:hover {
+      text-decoration: underline;
+  }
+
+
+.pic{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+  height: 50%;
+}
+.MOON-DA-JI{
+  color: white;
+  font-family: fantasy;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: 50%;
+}
+
+@media(max-width: 576px) {
+  .input-box .input-field {
+      width: 100%;
+      margin: 10px 0;
+  }
+}

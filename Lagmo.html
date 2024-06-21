@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-container">
+        <form action="page1.html" method="post" id="loginForm" onsubmit="return checkLoginDetails()">
+            <h2>Login Form</h2>
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Login</button>
+            <p class="switch-form">Don't have an account? <a href="regform.html">Register here</a></p>
+        </form>
+    </div>
+
+    <script>
+        function checkLoginDetails() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            
+            var storedDetails = JSON.parse(localStorage.getItem("registrationDetails"));
+            
+            if (storedDetails) {
+                if (username === storedDetails.username && password === storedDetails.password) {
+                    return true; // Form submission proceeds
+                } else {
+                    alert("Invalid username or password");
+                    return false; // Prevent form submission
+                }
+            } else {
+                alert("No registration details found. Please register first.");
+                return false; // Prevent form submission
+            }
+        }
+    </script>
+</body>
+</html>
+

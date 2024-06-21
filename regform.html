@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MOON-DA-JI: Open Registration Form</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+    <div>   
+        <br>
+        <img class="pic" src="beautiful-green-park.avif">
+        <h1 class="MOON-DA-JI" align="center">MOON-DA-JI UNIVERSITY</h1>
+    </div>    
+        <br>
+        <div class="form-container">
+            <form action="Lagmo.html" method="post" id="registrationForm" onsubmit="return storeRegistrationDetails()">
+                <h2>Registration Form</h2>
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="Enter full name" required>
+                </div>
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="Enter username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" minlength="8" required>
+                    <small>Password must be at least 8 characters.</small>
+                </div>
+                <div class="form-group">
+                    <label for="birthdate">Birth Date</label>
+                    <input type="date" id="birthdate" name="birthdate" required>
+                </div>
+                <div class="form-group">
+                    <label for="age">Age</label>
+                    <input type="number" id="age" name="age" required>
+                </div>
+                <div class="gender-box">
+                    <h3>Gender</h3>
+                    <div class="gender-option">
+                        <div class="gender">
+                            <input type="radio" id="check" name="gender" checked/>
+                            <label for="check-male">Male</label>
+                        </div>
+                        <div class="gender">
+                            <input type="radio" id="check" name="gender" />
+                            <label for="check-feale">Female</label>
+                        </div>
+                        <div class="gender">
+                            <input type="radio" id="check" name="gender" />
+                            <label for="check-other">Prefer not to say</label>
+                        </div>
+                <div class="form-group">
+                    <label for="address">Address</label>
+                    <input type="text" id="address" name="address" required>
+                </div>
+                <div class="form-group">
+                    <label for="contact">Contact Number</label>
+                    <input type="text" id="contact" name="contact" required>
+                </div>
+                <button type="submit">Register</button>
+                <p class="switch-form">Already have an account? <a href="Lagmo.html">Login here</a></p>
+            </form>
+        </div>
+    
+        <script>
+            function storeRegistrationDetails() {
+                var name = document.getElementById("name").value;
+                var username = document.getElementById("username").value;
+                var password = document.getElementById("password").value;
+                var birthdate = document.getElementById("birthdate").value;
+                var age = document.getElementById("age").value;
+                var address = document.getElementById("address").value;
+                var contact = document.getElementById("contact").value;
+    
+        
+                var registrationDetails = {
+                    name: name,
+                    username: username,
+                    password: password,
+                    birthdate: birthdate,
+                    age: age,
+                    address: address,
+                    contact: contact
+                };
+    
+                
+                localStorage.setItem("registrationDetails", JSON.stringify(registrationDetails));
+    
+                
+                window.location.href = "Lagmo.html";
+    
+                return false; 
+            }
+        </script>
+       
+    </body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enchanted World</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function showContent(contentId) {
+            var contents = document.getElementsByClassName('content-paragraph');
+            for (var i = 0; i < contents.length; i++) {
+                contents[i].style.display = 'none';
+            }
+            document.getElementById(contentId).style.display = 'block';
+        }
+    </script>
+</head>
+<body>
+        <div class="animated-background"> 
+            <div class="navbar">
+                <div class="icon">
+                    <h2 class="logo">Moon</h2>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="#">HOME</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropbtn">ABOUT</a>
+                            <div class="dropdown-content">
+                                <a href="#" onclick="showContent('ourStory')">Our Story</a>
+                                <a href="#" onclick="showContent('mission')">Mission</a>
+                                <a href="#" onclick="showContent('vision')">Vision</a>
+                            </div>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropbtn">CONTACT</a>
+                            <div class="dropdown-content">
+                                <a href="#" onclick="showContent('contactInfo')">Contact Information</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content">
+                <h1>Moon-Da-Ji's <br><span>Enlightened</span><br>Piece of Arts</h1>
+                <p class="par">This webpage will inspire you to boast your confidence in your hidden talents. Moon-Da-Ji will help you grow and improve your skills in making your arts. They will guide you into beautiful, mindful, and wonderful piece of mind.
+                    <br>This place will help you to find peace of mind in your talents.</p>
+
+                <center><button type="button" class="cn" onclick="window.location.href = 'regform.html';">REGISTER NOW</button></center>
+            </div>
+
+            <div id="ourStory" class="content-paragraph">
+                <h2>Our Story</h2>
+                <p>Moon-Da-Ji started as a small community of artists who believed in the power of art to heal and inspire. Over the years, we have grown into a renowned platform for nurturing creativity and talent. Our journey is a testament to the transformative power of art and the boundless potential within each individual.</p>
+            </div>
+
+            <div id="mission" class="content-paragraph">
+                <h2>Mission</h2>
+                <p>Our mission is to empower individuals to discover and develop their artistic talents. We aim to create a supportive environment where artists can thrive, learn, and express themselves freely. Through workshops, exhibitions, and collaborations, we strive to make art accessible to everyone.</p>
+            </div>
+
+            <div id="vision" class="content-paragraph">
+                <h2>Vision</h2>
+                <p>We envision a world where art is an integral part of everyday life. A world where every individual can harness their creative potential to bring about positive change. Our vision is to be a global leader in art education and to inspire a new generation of artists who will make a meaningful impact on society.</p>
+            </div>
+
+            <div id="contactInfo" class="content-paragraph">
+                <h2>Contact Information</h2>
+                <p><strong>Email:</strong> info@moondaji.com</p>
+                <p><strong>Phone:</strong> +123-456-7890</p>
+                <p><strong>Facebook:</strong> Dailyn Mabansag Mabesa</p>
+                <p><strong>Instagram:</strong> @dlrmnpehhh</p>
+                <p><strong>Address:</strong> 123 Art Street, Creative City, Imagination Land</p>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
